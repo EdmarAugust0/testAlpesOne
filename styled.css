@@ -5,6 +5,7 @@
     --blue: #1C69D4;
     --whiteBlue: #448aec;
     --white: #fff;
+    --red: #ff0000;
 }
 
 * {
@@ -33,12 +34,17 @@
 
 .links {
     display: flex;
+    align-items: center;
 }
 
 .linksContatos {
     display: flex;
     align-items: center;
     margin-right: 16px;
+
+    a:hover {
+        color: var(--blue);
+    }
 }
 
 .iconLink {
@@ -49,11 +55,13 @@
     margin-right: 16px;
     align-items: center;
 
+    a:hover {
+        color: var(--blue);
+    }
 }
 
 .listaAncoras {
     display: flex;
-
 }
 
 .listaLinks {
@@ -90,6 +98,7 @@
 .input {
     padding: 16px;
     color: var(--gray) ;
+    display: inline-block;
 }
 
 .textArea {
@@ -157,8 +166,14 @@ footer {
     margin-right: 16px;
 }
 
+
 .copyright {
     display: flex;
     justify-content: space-between;
     margin-top: 24px;
 }
+
+.input-error {
+    border-color: var(--red);
+}
+
