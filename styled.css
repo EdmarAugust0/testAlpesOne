@@ -102,9 +102,16 @@
 .finalizacao {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     div {
-        margin: 48px 0;
+        margin: 48px 0 0 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        margin-right: 8px;
     }
 
     input, label {
@@ -112,6 +119,7 @@
     }
 
     button {
+        width: 20%;
         padding: 16px;
         background-color: var(--blue);
         border: 1px solid var(--blue);
