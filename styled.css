@@ -1,0 +1,127 @@
+:root {
+    --black: #000;
+    --gray: #484343;
+    --blue: #1C69D4;
+    --whiteBlue: #1C69D4;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: var(--black);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 8px auto auto auto;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--black);
+}
+
+.headerNav {
+    margin-right: 16px;
+}
+
+.links {
+    display: flex;
+}
+
+.linksContatos {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.iconLink {
+    width: 16px;
+}
+
+.ancora {
+    margin-right: 16px;
+    align-items: center;
+
+}
+
+.listaAncoras {
+    display: flex;
+
+}
+
+.listaLinks {
+    display: flex;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        font-weight: 400;
+        margin: 72px 0 48px 0;
+    }
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.inputGroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.input {
+    padding: 16px;
+    color: var(--gray) ;
+}
+
+.textArea {
+    margin-top: 24px;
+    padding: 16px;
+    width: 100%;
+    height: 168px;
+}
+
+.finalizacao {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        margin: 48px 0;
+    }
+
+    input, label {
+        cursor: pointer;
+    }
+
+    button {
+        padding: 16px;
+        background-color: var(--blue);
+        border: 1px solid var(--blue);
+        color: var(--white);
+        cursor: pointer;
+        transition: all 0.3 ease;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);     
+    }
+
+    button:hover {
+        background-color: var(--whiteBlue);
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    }
+}

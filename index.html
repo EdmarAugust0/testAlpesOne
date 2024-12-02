@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styled.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>AlpesOne</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="img/BMW.png" alt="Logo da BMW">
+        </div>
+        <div class="links">
+            <nav class="headerNav">
+                <ul class="listaAncoras">
+                    <li class="ancora">
+                        <a href="#">Novos</a>
+                    </li>
+                    <li class="ancora">
+                        <a href="#">Seminovos</a>
+                    </li>
+                    <li class="ancora"> 
+                        <a href="#">Pós Vendas</a>
+                    </li>
+                    <li class="ancora">
+                        <a href="#">Peças e Acessórios</a>
+                    </li>
+                    <li class="ancora">
+                        <a href="#">Eventos</a>
+                    </li>
+                    <li class="ancora">
+                        <a href="#">Sobre Nós</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="headerContatos">
+                <ul class="listaLinks">
+                    <li class="linksContatos">
+                        <a href="#">
+                            <img class="iconLink" src="img/map pin.png" alt="Link de Localização">
+                            Localização
+                        </a>
+                    </li>
+                    <li class="linksContatos">
+                        <a href="#">
+                            <img class="iconLink" src="img/phone.png" alt="Link do Telefone">
+                            Telefone
+                        </a>
+                    </li>
+                    <li class="linksContatos">
+                        <a href="#">
+                            <img class="iconLink" src="img/whatsapp.png" alt="Link do WhatsApp">
+                            WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="containerForm">
+            <h1>Entre em contato</h1>
+            <form>
+                <div class="inputGroup">
+                    <input class="input" type="text" placeholder="Nome" required>
+                    <input class="input" type="email" placeholder="E-mail" required>
+                    <input class="input" type="tel" placeholder="Telefone" required>
+                    <select name="Assunto" class="input">
+                        <option value="" disabled selected hidden>Assunto</option>
+                        <option value="falhaCompra">Falha na compra</option>
+                        <option value="manutencao">Manutenção</option>
+                        <option value="pintura">Pintura</option>
+                        <option value="duvidaTecnica">Duvida técnica</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+                <div>
+                    <textarea class="textArea" placeholder="Mensagem"></textarea>
+                </div>
+            </form>
+            <div class="container">
+                <div class="finalizacao">
+                    <div>
+                        <input type="checkbox" name="politic" id="politic">
+                        <label for="politic">Aceito a Política de Privacidade</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
