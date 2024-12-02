@@ -33,6 +33,16 @@ $(document).ready(function() {
             $(element).removeClass('input-error');
         }
     })
+
+    $('#form').validate({
+        submitHandler: function(form) {
+            $('#modal').fadeIn();
+        }
+    });
+
+    $('#closeModal').on('click', function() {
+        $('#modal').fadeOut();
+    })
     
 
 });
