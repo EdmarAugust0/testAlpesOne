@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    console.log(jQuery.fn.validate);
+    console.log('DOM carregado');
+    console.log($.fn.validate);
+
     $('#form').validate({
         rules: {
             nome: {
@@ -34,15 +36,19 @@ $(document).ready(function() {
         }
     })
 
+    if (window.performance && window.performance.navigation.type === 1) {
+        $('#modal').fadeOut();
+    }
+
     $('#form').validate({
-        submitHandler: function(form) {
-            $('#modal').fadeIn();
-        }
+        submitHandler: function (form) {
+            console.log('Form submetido');
+            $('#modal').fadeIn(); 
+        },
     });
 
-    $('#closeModal').on('click', function() {
-        $('#modal').fadeOut();
-    })
-    
-
+    $('#closeModal').on('click', function () {
+        console.log('Fechar modal');
+        $('#modal').fadeOut(); 
+    });
 });
