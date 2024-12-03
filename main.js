@@ -51,4 +51,11 @@ $(document).ready(function() {
         console.log('Fechar modal');
         $('#modal').fadeOut(); 
     });
+
+    const menuToggle = document.getElementById('menuToggle');
+    const menuItems = document.getElementById('links');
+
+    menuToggle.addEventListener('click', () => {    
+    menuItems.style.display = menuItems.style.display === 'block' ? 'none' : 'block';
+});
 });

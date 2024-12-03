@@ -30,6 +30,18 @@
 
 .headerNav {
     margin-right: 16px;
+    position: relative;
+}
+
+.menu-toggle {
+    background-color: var(--blue);
+    color: var(--black);
+    font-size: 24px;
+    border: none;
+    padding: 0 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: none;
 }
 
 .links {
@@ -57,6 +69,7 @@
 
     a:hover {
         color: var(--blue);
+        border-bottom: 1px solid var(--blue);
     }
 }
 
@@ -151,8 +164,8 @@
 
 footer {
     margin-top: 40px;
-    height: 220px;
     background-color: var(--whiteGray);
+    min-height: 100%;
 }
 
 .containerFooter {
@@ -226,11 +239,71 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        position: relative;
+    }
+
     .inputGroup {
         grid-template-columns: 1fr;
     }
 
     .links {
-        display: none;
+        padding: 0;
+        margin: 0;
+        display: none; 
+        background-color: var(--blue);
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 60%; 
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .listaAncoras, .listaLinks {
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        width: 100%;
+        gap: 8px;
+
+        li {
+            padding: 8px;
+        }
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .container h1 {
+        font-size: 20px;
+    }
+
+    .finalizacao button {
+        width: 80%;
+    }
+
+    .iconSocial {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+
+    .linkSocial {
+        margin: 0;
+        text-align: center;
+    }
+
+    .copyright {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .copyright p:first-of-type {
+        margin-bottom:16px;
     }
 }
